@@ -1,0 +1,76 @@
+/* General Styling for the animated images */
+.animated-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 1s ease-in-out;
+}
+
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Styling for the dots in the slider */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #FFF017;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #134df3;
+}
+
+/* Ensures container adapts to different screen sizes */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flexbox adjustments for responsive layout */
+@media screen and (max-width: 600px) {
+  /* Stack the slider and text vertically on smaller screens */
+  .image-animation-container {
+    flex-direction: column;
+    padding: 16px; /* Smaller padding for phones */
+  }
+
+  .slick-slide img {
+    max-height: 250px; /* Adjust image height for small screens */
+  }
+
+  /* Adjust text size for smaller screens */
+  h2 {
+    font-size: 1.5rem; /* Smaller headline size */
+  }
+
+  h4 {
+    font-size: 1rem; /* Adjust subheading size */
+  }
+
+  h6 {
+    font-size: 0.8rem; /* Smaller body text */
+  }
+
+  /* Reduce padding for the text container */
+  .text-container {
+    padding: 8px;
+  }
+}
+
+/* Adjustments for medium screens */
+@media screen and (max-width: 960px) {
+  h2 {
+    font-size: 2rem; /* Slightly larger text for medium screens */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* Adjust subheading size */
+  }
+
+  h6 {
+    font-size: 1rem; /* Body text size */
+  }
+}

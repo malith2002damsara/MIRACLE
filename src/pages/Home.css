@@ -1,0 +1,25 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  width: 500%; /* 5 images, each 100% width */
+  animation: slide 20s infinite;
+}
+
+.carousel-images img {
+  width: 20%; /* Each image takes up 20% of the total width */
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  100% { transform: translateX(-500%); }
+}
